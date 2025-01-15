@@ -7,7 +7,7 @@ We have to return true or false
 import java.util.*;
 class main {
     public boolean subSetSum(int[] arr,int sum){
-        boolean t[arr.length+1,sum+1];
+        boolean t[arr.length,sum+1];
         for(int i = 0 ;i<arr.length;i++){
             for(int j = 0;j<sum;j++){
                 if(i==0){
@@ -24,7 +24,7 @@ class main {
                 }
             }
         }
-        return t[arr.length+1,sum+1];
+        return t[arr.length,sum+1];
     }
     public static void main(String[] args){
 
